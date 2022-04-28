@@ -8,7 +8,7 @@ import type {
   SortingDirection,
 } from "./ha-data-table";
 
-const filterData = (
+export const filterData = (
   data: DataTableRowData[],
   columns: SortableColumnContainer,
   filter: string
@@ -35,7 +35,7 @@ const filterData = (
   );
 };
 
-const sortData = (
+export const sortData = (
   data: DataTableRowData[],
   column: ClonedDataTableColumnData,
   direction: SortingDirection,

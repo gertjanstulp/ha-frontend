@@ -28,7 +28,7 @@ import { haStyleScrollbar } from "../../resources/styles";
 import "../ha-checkbox";
 import type { HaCheckbox } from "../ha-checkbox";
 import "../ha-svg-icon";
-import { filterData, sortData } from "./sort-filter";
+import { filterData, sortData } from "./sort_filter_worker";
 import { HomeAssistant } from "../../types";
 import "@lit-labs/virtualizer";
 

@@ -15,7 +15,7 @@ export interface NavigateOptions {
 
 export const navigate = (path: string, options?: NavigateOptions) => {
   const replace = options?.replace || false;
-
+  console.log("navigate")
   if (historyPromise) {
     historyPromise.then(() => navigate(path, options));
     return;
@@ -38,6 +38,7 @@ export const navigate = (path: string, options?: NavigateOptions) => {
       path
     );
   } else {
+    console.log("pushstate")
     mainWindow.history.pushState(null, "", path);
   }
   fireEvent(mainWindow, "location-changed", {
